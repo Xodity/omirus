@@ -4,3 +4,4 @@ jspm_packages/
 
 # package
 package-lock.json
+*-lock.json
