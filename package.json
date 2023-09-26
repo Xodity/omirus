@@ -1,0 +1,17 @@
+{
+  "name": "omirus-library",
+  "version": "1.0.0",
+  "description": "omirus library. Providing library code for Laramus code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "omirus-cli": "/cli/cli.js"
+  },
+  "author": "qiraxyz",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0"
+  }
+}
