@@ -1,8 +1,8 @@
 {
-  "name": "omirus-cli",
+  "name": "omirus",
   "version": "1.0.0",
   "description": "cli for omirus-library.",
-  "main": "cli.js",
+  "main": "bin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
