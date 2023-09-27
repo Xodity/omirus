@@ -9,10 +9,10 @@ module.exports = {
         app.post('/webhook', (req, res) => {
             const payload = req.body;
             console.log('Data dari webhook:', payload);
-            res.status(200).send('Webhook berhasil diterima');
+            res.status(200).send('Webhook data successfully added');
         });
         app.listen(port, () => {
-            console.log(`Server webhook berjalan di port ${port}`);
+            console.log('\x1b[31m',`Server webhook running in port ${port}`);
         });
 
     }
