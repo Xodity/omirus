@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "omirus": "/cli/bin.js"
+    "omirus": "/cli/rune.js"
   },
   "author": "qiraxyz",
   "license": "MIT",
@@ -16,6 +16,7 @@
     "commander": "^11.0.0",
     "express": "^4.18.2",
     "fs-extra": "^11.1.1",
-    "inquirer": "^9.2.11"
+    "inquirer": "^9.2.11",
+    "javascript-obfuscator": "^4.1.0"
   }
 }
