@@ -7,7 +7,7 @@ const obfuscator = require('javascript-obfuscator');
 const { exec } = require('child_process');
 /**
  * 
- * @requires library dependencies modules
+ * @requires library dependencies modules data
  * 
  */
 const { AnCreate } = require('./library/ancient-book');
