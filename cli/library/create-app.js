@@ -1,7 +1,7 @@
 module.exports = {
   createApp: function (program, exec, fs, path, fse) {
     program
-      .version('1.0.2')
+      .version('1.0.3')
       .description('CLI Description')
       .command('create-app <folderName> [repositoryName]')
       .description('Create a new app from a GitHub repository.')
