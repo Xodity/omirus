@@ -5,3 +5,6 @@ jspm_packages/
 # package
 package-lock.json
 *-lock.json
+
+# Tester path
+app/
