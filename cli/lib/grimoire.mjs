@@ -31,6 +31,15 @@ export const AnCreate = (program, exec, fs, path, fse, chalk) => {
       const pathParts = inputPath.split('/');
       const fileName = pathParts.pop();
       const subfolder = pathParts.join('/');
+
+      if (subfolder) {
+        destinationPath = path.join(destinationPath, subfolder);
+      }
+
+      if (!fs.existsSync(destinationPath)) {
+        fse.ensureDirSync(destinationPath);
+      }
+
       const fullPath = path.join(destinationPath, fileName);
 
       if (fs.existsSync(fullPath)) {
@@ -44,13 +53,6 @@ export const AnCreate = (program, exec, fs, path, fse, chalk) => {
       const modifiedContent = modelContent.replace(/base/gi, newFileName);
 
       const loadingSpinner = ora(`Creating ${file} ${fileName}...`).start();
-
-      if (subfolder) {
-        destinationPath = path.join(destinationPath, subfolder);
-        if (!fs.existsSync(destinationPath)) {
-          fse.ensureDirSync(destinationPath);
-        }
-      }
 
       fs.writeFileSync(fullPath, modifiedContent);
 
