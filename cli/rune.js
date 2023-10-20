@@ -1,34 +1,18 @@
 #!/usr/bin/env node
-const fs = require('fs');
-const fse = require('fs-extra');
-const path = require('path');
-const { program } = require('commander');
-const obfuscator = require('javascript-obfuscator');
-const { exec } = require('child_process');
-/**
- * 
- * @requires library dependencies modules data
- * 
- */
-const { AnCreate } = require('./library/ancient-book');
-const { obfusLib } = require('./library/obfuscator');
-const { createApp } = require('./library/create-app');
+import fs from 'fs';
+import path from 'path';
+import chalk from 'chalk';
+import fse from 'fs-extra';
+import { program } from 'commander';
+import { exec } from 'child_process';
+import { createApp } from './lib/app.mjs';
+import { AnCreate } from './lib/grimoire.mjs';
 
-/**
- * 
- * @package
- * @author <qiraxyz>
- * library omirus
- * 
- */
 createApp(program, exec, fs, path, fse);
-/**
- * obfuscating file data
- */
-obfusLib(program, fs, path, fse, obfuscator);
-/**
- * obfuscating file data
- */
-AnCreate(program, exec, fs, path, fse);
+AnCreate(program, exec, fs, path, fse, chalk);
+
+program
+.version('1.1.0')
+.description('CLI Description')
 
 program.parse(process.argv);
