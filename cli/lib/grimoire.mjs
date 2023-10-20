@@ -1,4 +1,5 @@
 import ora from 'ora';
+import globalDirs from 'global-dirs';
 
 export const AnCreate = (program, exec, fs, path, fse, chalk) => {
   program
@@ -37,7 +38,7 @@ export const AnCreate = (program, exec, fs, path, fse, chalk) => {
         return;
       }
 
-      const modelFilePath = `stacker/${file}.php`;
+      const modelFilePath = path.join(globalDirs.npm.packages,'omirus-library', 'stacker', `${file}.php`);
       const modelContent = fs.readFileSync(modelFilePath, 'utf8');
       const newFileName = path.basename(fileName, '.php');
       const modifiedContent = modelContent.replace(/base/gi, newFileName);

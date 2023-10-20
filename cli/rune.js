@@ -12,7 +12,7 @@ createApp(program, exec, fs, path, fse);
 AnCreate(program, exec, fs, path, fse, chalk);
 
 program
-.version('1.1.0')
+.version('1.1.2')
 .description('CLI Description')
 
 program.parse(process.argv);
