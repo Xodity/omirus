@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { handler } from '../handler/commander.mjs';
+import { handler } from '../handler/handler.omirus.mjs';
 import { program } from 'commander';
 /**
  *  ----------------------------------------------------------------
