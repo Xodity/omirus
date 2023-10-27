@@ -1,0 +1,27 @@
+{
+  "name": "orus-datapack",
+  "version": "1.0.0",
+  "description": "package for omirus CLI to providing autoload base controller, model and migrations Liberius PHP Framework.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "autoload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiraxyz/orus-datapack.git"
+  },
+  "keywords": [
+    "orus-datapack",
+    "laramus",
+    "liberius"
+  ],
+  "author": "qiraxyz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qiraxyz/orus-datapack/issues"
+  },
+  "homepage": "https://github.com/qiraxyz/orus-datapack#readme"
+}
