@@ -1,19 +1,19 @@
 {
-  "name": "omirus-library",
-  "version": "1.1.4",
-  "description": "omirus library. Providing library code for Laramus code.",
+  "name": "omirus",
+  "version": "1.2.0",
+  "description": "omirus command line. Providing library code for Laramus code.",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "node index.js",
-    "start": "node cli/rune.js"
+    "start": "node omirus-cli/rune.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Laramus/omirus-library.git"
+    "url": "git+https://github.com/Laramus/omirus.git"
   },
   "bin": {
-    "omirus": "/cli/rune.js"
+    "omirus": "/omirus-cli/rune.js"
   },
   "author": "qiraxyz",
   "license": "MIT",
