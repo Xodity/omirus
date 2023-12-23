@@ -1,35 +1,21 @@
 
 # Liberius Framework
-Light `php` Framework collaborate with javascript runtime `NODEJS`. `CLI` based on javascript [#omirus-library](https://www.github.com/laramus/omirus-library). 
-## Authors
-
-- [@qiraxyz](https://www.github.com/qiraxyz)
-- [@dhykas](https://github.com/dhykas)
-- [@ZeroneDoo](https://github.com/ZeroneDoo)
-
-`FEEL FREE TO CONTRIBUTE AND ADD YOUR NAME IN HERE`
+Light `CLI` Package for QuantumVibe community made with `NODEJS`. `CLI` based on javascript [#omirus](https://www.github.com/laramus/omirus). 
 
 
 
 ## Deployment
 
-To deploy this project [#omirus-library](https://www.github.com/laramus/omirus-library)
+To deploy this project [#omirus](https://www.github.com/laramus/omirus)
  install and run :
 
 ```bash
-npm i -g omirus-library
+npm i -g omirus
 ```
-
-```bash
-omirus create-app Laramus/Liberius
-```
-
 
 ## Features
 
-- MVC Maker
-- composer package support
-- re-useable
-- Fullstack Framework
-- Light code
-
+- MVC Generator
+- package downloader
+- Liberius App Installer
+- Migration and database Generator
